@@ -1,0 +1,45 @@
+[core]
+reloadable = true
+order = 0
+
+[package]
+version = "1.0.0"
+category = "Simulation"
+title = "Isaac Sim Force Dataset"
+description = "Extension to create a Dataset to recorde force and torques"
+authors = ["Adrian Aparisi"]
+repository = ""
+keywords = ["isaac", "force", "dataset"]
+changelog = "docs/CHANGELOG.md"
+readme = "docs/README.md"
+icon = "data/icon2.png"
+writeTarget.kit = true
+
+# Python array data uses numpy as its format
+[python.pipapi]
+requirements = ["numpy", "pytransform3d", "paho-mqtt", "scikit-learn", "roboticstoolbox-python", "pandas"]
+
+[dependencies]
+"omni.kit.uiapp" = {}
+"omni.physx" = {}
+"omni.isaac.dynamic_control" = {}
+"omni.isaac.synthetic_utils" = {}
+"omni.isaac.ui" = {}
+"omni.isaac.core" = {}
+"omni.isaac.franka" = {}
+"omni.isaac.manipulators" = {}
+"omni.isaac.dofbot" = {}
+"omni.isaac.universal_robots" = {}
+"omni.isaac.motion_generation" = {}
+"omni.graph.action" = {} 
+"omni.graph.nodes" = {}
+"omni.graph.core" = {}
+"omni.isaac.quadruped" = {}
+"omni.isaac.wheeled_robots" = {}
+"omni.sdu.ai" = {}
+
+[[python.module]]
+name = "omni.isaac.thesis.force_dataset"
+
+[[test]]
+timeout = 960

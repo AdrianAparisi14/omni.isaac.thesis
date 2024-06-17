@@ -1,0 +1,7 @@
+{
+    "true_labels": 0,
+    "predicted_labels_LSTM": 1,
+    "predicted_labels_SVM": 0,
+    "predicted_labels_RF": 0,
+    "predicted_labels_DTW": 0
+}
